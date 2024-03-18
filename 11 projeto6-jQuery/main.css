@@ -1,0 +1,143 @@
+:root {
+    --primary-color: rgb(64, 107, 64);
+    --secondary-color: whitesmoke;
+    --terciary-color: rgb(25, 44, 25);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Fuzzy Bubbles", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: var(--primary-color);
+}
+
+header > div {
+    background: linear-gradient(to bottom, var(--secondary-color) 50%, var(--primary-color) 50%);
+    padding: 11px 70px;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 {
+    margin-top: 5px;
+    color: var(--terciary-color);
+}
+
+.menuBurger {
+    width: 32px;
+    cursor: pointer;
+}
+
+.menuBurger span {
+    height: 2px;
+    width: 100%;
+    background-color: var(--terciary-color);
+    display: block;
+    margin-bottom: 4px;
+    border-radius: 50px;
+}
+
+nav {
+    width: 100%;
+    height: 70px;
+    color: var(--secondary-color);
+}
+
+nav .container {
+    padding: 0 50px;
+    display: flex;
+    justify-content: right;
+}
+
+nav li,
+footer li {
+    display: inline;
+    list-style: none;
+    margin-right: 20px;
+}
+
+main {
+    max-width: 80vw;
+    height: 65vh;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+main img {
+    width: 300px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 400px;
+}
+
+.form-item {
+    margin-bottom: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    color: var(--secondary-color);
+}
+
+input, button {
+    width: 300px;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+label.error {
+    display: block !important;
+    font-size: 14px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+button {
+    background-color: var(--secondary-color);
+    color: var(--terciary-color);
+    margin-top: 15px;
+}
+
+#name-error {
+    display: block;
+}
+
+footer {
+    background: linear-gradient(to bottom, var(--primary-color) 50%, var(--secondary-color) 50%);
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 150px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: var(--secondary-color);
+}
+
+footer li img {
+    height: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
