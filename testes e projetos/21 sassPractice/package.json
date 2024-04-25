@@ -1,0 +1,24 @@
+{
+  "name": "scsspractice",
+  "version": "1.0.0",
+  "description": "my scss practice",
+  "main": "main.scss",
+  "scripts": {
+    "sass": "sass source/main.scss build/main.css --watch",
+    "test": "npm"
+  },
+  "repository": {
+    "type": "git",
+    "url": "c:/cursoEbac/"
+  },
+  "keywords": [
+    "scss",
+    "first",
+    "practice"
+  ],
+  "author": "Gabriela Zimmermann",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.75.0"
+  }
+}
