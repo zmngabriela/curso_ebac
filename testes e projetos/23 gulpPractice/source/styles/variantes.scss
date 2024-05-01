@@ -8,4 +8,4 @@ $cores: (
     @each $key, $value in $cores {
         $key: $value;
     }
-}; // isso é pra ele ir automaticamente exportando todas as cores
+};
