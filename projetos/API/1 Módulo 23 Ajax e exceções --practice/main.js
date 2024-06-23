@@ -2,9 +2,9 @@ $(document).ready(function() {
     const avatar = $('.avatar');
     const nameElement = $('.name');
     const username = $('.username');
-    const repositories = $('repositories');
-    const followersNumber = $('followers');
-    const followingNumber = $('following');
+    const repositories = $('.repositories');
+    const followersNumber = $('.followers');
+    const followingNumber = $('.following');
     const link = $('.link');
 
     fetch('https://api.github.com/users/zmngabriela')
