@@ -1,24 +1,35 @@
 function Produto(nome, preco, estoque, marca, dataDeFabricacao) {
+    let _preco = preco;
+
     this.nome = nome;
-    this.preco = preco;
     this.estoque = estoque;
     this.marca = marca;
     this.dataDeFabricacao = new Date(dataDeFabricacao);
 
+    this.getPreco = function() { 
+        return _preco;
+    }
+
+    this.setPreco = function(valor) {
+        if (typeof valor === 'number') {
+            _preco = valor;
+        } else {
+            console.log('Por favor insira um número.')
+        }
+    }
+
     this.exibirDetalhes = function() {
         console.log(`Nome: ${this.nome}`);
-        console.log(`Preço: R$${this.preco.toFixed(2)}`);
+        console.log(`Preço: R$${this.getPreco()}`);
         console.log(`Estoque: ${this.estoque}`);
         console.log(`Marca: ${this.marca}`);
         console.log(`Data de Fabricação: ${this.dataDeFabricacao.toDateString()}`);
-        console.log(`Potencia: ${this.potencia}`);
-        console.log(`Voltagem: ${this.voltagem}`);
     }
 
     this.aplicarDesconto = function(porcentagem) {
-        const desconto = this.preco * (porcentagem / 100);
-        this.preco -= desconto;
-        console.log(`Novo preço após ${porcentagem}% de desconto: R$${this.preco.toFixed(2)}`);
+        const desconto = this.getPreco() * (porcentagem / 100);
+        _preco -= desconto;
+        console.log(`Novo preço após ${porcentagem}% de desconto: R$${this.getPreco()}`);
     }
 
     this.verificarDisponibilidade = function() {
@@ -31,6 +42,13 @@ function Eletronico(nome, preco, estoque, marca, dataDeFabricacao, voltagem, pot
     
     this.voltagem = voltagem;
     this.potencia = potencia;
+
+    const detalhesTecnicos = this.exibirDetalhes;
+    this.exibirDetalhes = function() {
+        detalhesTecnicos.call(this);
+        console.log(`Potência: ${this.potencia}`);
+        console.log(`Voltagem: ${this.voltagem}`);
+    }
 }
 
 function UtensilioCozinha(nome, preco, estoque, marca, dataDeFabricacao) {
@@ -44,10 +62,9 @@ const utensilioCozinha1 = new UtensilioCozinha("Moedor de pimenta", 400, 0, "Le 
 
 eletronico.exibirDetalhes();
 eletronico1.aplicarDesconto(10);
+eletronico1.exibirDetalhes();
+utensilioCozinha.exibirDetalhes();
+utensilioCozinha1.exibirDetalhes();
+
 console.log(utensilioCozinha.verificarDisponibilidade());
 console.log(utensilioCozinha1.verificarDisponibilidade());
-
-console.log(eletronico);
-console.log(eletronico1);
-console.log(utensilioCozinha);
-console.log(utensilioCozinha1);
