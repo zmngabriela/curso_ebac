@@ -11,6 +11,7 @@ const EstiloGlobal = createGlobalStyle`
     padding: 0;
     border-box: box-sizing;
     font-family: "Inter", sans-serif;
+    list-style: none;
 
   body {
     padding-top: 80px;

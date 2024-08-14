@@ -1,10 +1,10 @@
 // 1. CREATE REACT APP
 //  npx create-react-app projetoName --template typescript
 // 2. cd ./projetoName
-// 3. Se quiser usar o .editorconfig - baixar plugin
-//  npm install editorconfig
-// root = true
 
+// 3. .EDITORCONFIG Se quiser usar o .editorconfig:
+// criar arquivo .editorconfig / se der erro rodar npm install editorconfig
+// conteudo: root = true
 // [*]
 // indent_style = space
 // indent_size = 2
@@ -13,10 +13,14 @@
 // trim_trailing_whitespace = true
 // insert_final_newline = true
 
-// 4. Instalar Versões Específicas das Dependências:
+// 4. INSTALAR DEPENDENCIAS - esse aqui to baixando versoes especificas que foram ensinados no curso:
 //  npm install @typescript-eslint/eslint-plugin@^5.50.0 @typescript-eslint/parser@^5.50.0 eslint@^8.33.0 eslint-config-prettier@^8.6.0 eslint-plugin-prettier@^4.2.1 eslint-plugin-react@^7.32.2 eslint-plugin-react-hooks@^4.6.0 prettier@2.8.3
 
-// 5. configurar eslint:
+// 5. ESLINT - Criar Arquivo de Configuração do ESLint:
+//  npm init @eslint/config@0.4.6 - lembrar de estar na pasta do projeto
+// 6. pra testar: npx eslint .
+
+// 7. ESLINT config no .eslintrc.json:
 // "plugins": ["@typescript-eslint", "react", "react-hooks"],
 // 	"rules": {
 // 		"react-hooks/rules-of-hooks": "error",
@@ -29,11 +33,7 @@
 // 		"version": "detect"
 // 	}
 
-// 6. Criar Arquivo de Configuração do ESLint:
-//  npm init @eslint/config@0.4.6 - lembrar de estar na pasta do projeto
-// 7. pra testar: npx eslint .
-
-// 8. configurar prettier:
+// 8. PRETTIER:
 //  fazer um arquivo settings.json e colocar na pasta .vscode (o format on save tem que ta habilidado nas settins) - baixar plugin
 // {
 // "editor.formatOnSave": false,
@@ -42,14 +42,14 @@
 // }
 // }
 // automatizar e fazer todos os arquivos rodar o prettier:
-// npm prettier --write .\src\
+// npm prettier --write .\src
 // se o prettier der erro, rodar npx eslint --fix src
 
 // 9. TERMINAR CONFIGURACAO DO REACT APP:
 // rodar npm start - vai abrir a tela do vizualizador da pag react
 // baixar a extencao de react do chrome e usar componentes
 
-// 10. instalar styled components:
+// 10. STYLED COMPONENTS:
 // npm i --save styled-components. - lembrar de estar na pasta do projeto
 // o VScode nao sabe oq e esse formato, e pra usar temos que baixar o eslint@typescript-eslint/no-unused-vars
 // da pra fazer pelo quick fix mesmo que ele vai sugerir
