@@ -7,7 +7,7 @@ import { LinkBotao } from './styles';
 // podemos usar o componente stilizado no arquivo do componente
 // nao e muito legal, mas se for usar, deve ficar antes do cod do componente, como ta aqui
 const Card = styled.div`
-  border: 1px solid #c1c1c1;
+  border: 1px solid ${(props) => props.theme.corBorda};
   padding: 16px;
 `;
 

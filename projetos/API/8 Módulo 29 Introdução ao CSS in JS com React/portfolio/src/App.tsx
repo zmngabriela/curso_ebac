@@ -55,14 +55,20 @@
 // da pra fazer pelo quick fix mesmo que ele vai sugerir
 // npm i --save-dev @types/styled-components
 
+// CONFIGURANDO O TEMA DO STYLED COMPONENTS
+import { ThemeProvider } from 'styled-components';
+
 import About from './containers/About';
 import Projects from './containers/Projects';
 import Sidebar from './containers/Sidebar';
 import EstiloGlobal, { Container } from './styles';
+// import temaLight from './themes/light';
+import temaDark from './themes/dark';
 
 function App() {
   return (
-    <>
+    // CONFIGURANDO O TEMA DO STYLED COMPONENTS
+    <ThemeProvider theme={temaDark}>
       <EstiloGlobal />
       <Container>
         <Sidebar />
@@ -71,7 +77,7 @@ function App() {
           <Projects />
         </main>
       </Container>
-    </>
+    </ThemeProvider>
   );
 }
 
