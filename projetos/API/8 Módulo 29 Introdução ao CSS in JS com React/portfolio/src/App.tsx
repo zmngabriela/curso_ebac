@@ -62,7 +62,7 @@ import About from './containers/About';
 import Projects from './containers/Projects';
 import Sidebar from './containers/Sidebar';
 import EstiloGlobal, { Container } from './styles';
-// import temaLight from './themes/light';
+import temaLight from './themes/light';
 import temaDark from './themes/dark';
 
 function App() {
