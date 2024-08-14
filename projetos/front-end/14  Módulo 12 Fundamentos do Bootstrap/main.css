@@ -1,0 +1,36 @@
+table {
+    max-width: 500px;
+    margin: 50px auto;
+}
+
+section {
+    padding: 50px 100px;
+}
+
+#price p {
+    width: 150px;
+}
+
+.collapse-style {
+    display: flex;
+    gap: 200px;
+    margin: 50px auto;
+}
+
+a.btn {
+    display: block;
+    max-width: 100px;
+}
+
+time {
+    display: block;
+}
+
+.post {
+    margin-bottom: 30px;
+}
+
+.dropdown-usage {
+    display: flex;
+    gap: 10px;
+}

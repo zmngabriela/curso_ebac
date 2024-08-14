@@ -1,0 +1,18 @@
+@use 'variantes';
+
+body {
+    background-color: map-get(variantes.$cores, 'corPrincipal');
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1 {
+    color: map-get(variantes.$cores, 'corSecundaria');
+}
+
+button {
+    background-color: map-get(variantes.$cores, 'corSecundaria');
+    color: map-get(variantes.$cores, 'corPrincipal');
+    padding: 10px;
+    border: 2px solid map-get(variantes.$cores, 'corTerciaria');
+    cursor: pointer;
+}

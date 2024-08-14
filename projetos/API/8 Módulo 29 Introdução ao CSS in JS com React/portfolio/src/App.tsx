@@ -54,13 +54,11 @@
 // da pra fazer pelo quick fix mesmo que ele vai sugerir
 // npm i --save-dev @types/styled-components
 
-import Teste from './TesteStyledComponents';
 import EstiloGlobal from './styles';
 
 function App() {
   return (
     <>
-      <Teste />
       <EstiloGlobal />
     </>
   );

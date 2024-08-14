@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games Shop - A sua loja de games</title>
+    <link rel="stylesheet" href="./main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container-header">
+            <h1>Games Shop</h1>
+            <nav>
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#sobre">Loja</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section>
+        <div class="container">
+            <div class="container-img">
+                <img class="store-front" src="https://i.pinimg.com/564x/9f/d0/1d/9fd01d14231f6f6389f8704541d38839.jpg" alt="fachada da loja" />
+            </div>
+            <div class="container-sobre" id="sobre">
+                <h2>Sobre a loja</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus ex sequi in, harum molestias quaerat sit assumenda? Mollitia accusantium tempora porro natus, vel corporis repellendus! Ex necessitatibus sint culpa cupiditate!
+                </p>
+                <ul class="brands">
+                    <li><img src="https://i.pinimg.com/564x/69/f5/1f/69f51ff40ab13cdd3ff93e9b8bccb2fc.jpg" alt="Xbox"/></li>
+                    <li><img src="https://i.pinimg.com/564x/ad/38/54/ad3854b3b9e1c93353807ebbd0c47e03.jpg" alt="Playstation"/></li>
+                    <li><img src="https://i.pinimg.com/564x/eb/c2/df/ebc2df3d446a2938a64428f19333d9b5.jpg" alt="Nintendo"/></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section>
+            <div class="container-contatos" id="contato">
+                <h2>Contato</h2>
+                <div class="contact-methods">
+                        <div>
+                            <h3>Fale Conosco</h3>
+                            <form>
+                                <input type="text" placeholder="Seu nome aqui" required />
+                                <input type="email" placeholder="Seu email aqui" required />
+                                <input type="tel" placeholder="Seu telefone aqui (opcional)" required/>
+                                <textarea placeholder="Sua mensagem"></textarea>
+                                <button type="submit">Enviar</button>
+                            </form> 
+                        </div>
+                        <div>
+                            <h3>Nos acompanhe</h3>
+                            <ul class="social-links">
+                                <li>
+                                    <a href="#" title="Siga-nos no Instagram">
+                                        <img src="https://cdn-icons-png.flaticon.com/256/87/87390.png" alt="Logo do Instagram">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Siga-nos no Facebook">
+                                        <img src="data:image/png;base64,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" alt="Logo do Facebook">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Visite o nosso canal no Youtube">
+                                        <img src="data:image/png;base64,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" alt="Logo do Youtube">
+                                    </a>
+                                </li>
+                            </ul> 
+                        </div>
+                        <div>
+                            <h3>Venha até nós</h3> 
+                            <p>
+                                Rua Javascript 3, São Paulo, São Paulo
+                            </p>
+                        </div>
+                </div>
+            </div>
+    </section>
+    <footer>
+        <div class="container-footer">
+            <p>
+                <span>&copy; Games Shop. Todos os direitos reservados</span>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

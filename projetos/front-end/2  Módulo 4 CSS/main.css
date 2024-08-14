@@ -1,0 +1,218 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+    background: linear-gradient(beige 0%, 
+                                white 30%, 
+                                beige 70%, 
+                                white 100%);
+
+}
+
+header {
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    padding: 15px 10px;
+    background-color: beige;
+}
+
+.container-header {
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+h1 {
+    position: absolute;
+    top: 1px;
+    left: 0;
+    max-width: 100px;
+}
+
+.container-header img {
+    max-height: 50px;
+    position: absolute;
+    left: 120px;
+    top: 1px;
+}
+
+nav {
+    right: 0;
+    top: 10px;
+    position: absolute;
+    width: 300px;
+}
+
+nav ul {
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav li {
+    display: inline-flex;
+    right: 0;    
+    justify-content: space-evenly;
+
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover, h1:hover, .container-header img:hover {
+    color: rgb(206, 203, 20);
+}
+
+main {
+    margin: 0 auto;
+    padding-top: 70px;;
+    width: 1366px;
+}
+
+.container-articles {
+    padding: 50px;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background: radial-gradient(rgb(241, 240, 144) 0%, 
+                                rgb(241, 240, 144) 10%, 
+                                beige 50%,
+                                beige 70%,
+                                white 100%)
+}
+
+.container-articles > h2, .container-sobre > h2, .container-blog > h2, .container-contato > h2 {
+    margin: 20px auto;
+}
+
+.articles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.articles img {
+    width: 100%;    
+}
+
+.articles article {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+article > h2 {
+    margin: 25px auto;
+}
+
+article p {
+    max-width: 300px;
+    text-align:center
+}
+
+article a {
+    text-decoration: none;
+    background-color: rgb(241, 240, 144);
+    padding: 10px;
+    margin-top: 20px;
+    color: black;
+    border-radius: 30px;
+}
+
+.container-sobre {
+    width: 100%;
+    padding: 50px;
+}
+
+.container-blog {
+    width: 100%;
+    padding: 50px;
+    background: linear-gradient(rgb(241, 240, 144) 0%, rgb(241, 240, 144) 50%, beige 50%, beige 100%);
+}
+
+.link-blog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.container-blog a, .container-blog button {
+    text-decoration: none;
+    background-color: rgb(241, 240, 144);
+    padding: 12px;
+    margin-top: 20px;
+    color: black;
+    border-radius: 30px;
+    font-size: 14px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: none;
+}
+
+.container-contato {
+    width: 100%;
+    padding: 50px;
+}
+
+.contato {
+    max-width: 300px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.container-contato a {
+    text-decoration: none;
+    background-color: rgb(241, 240, 144);
+    padding: 10px;
+    margin-top: 20px;
+    color: black;
+    border-radius: 30px;
+}
+
+footer {
+    width: 100%;
+    height: 70px;
+    margin: 20px auto 0 auto;
+    padding: 50px 50px;
+    position: relative;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    background-color: beige;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    gap: 10px;
+    position: absolute;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+footer span {
+    position: absolute;
+    right: 50px;
+}

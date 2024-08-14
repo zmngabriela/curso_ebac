@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabriela's birthday party</title>
+    <link rel="stylesheet" href="./styles/main.scss">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <header class="header">
+        <div class="header__container">
+            <img class="header__toggle" src="./images/menu.png" alt="Menu">
+            <img class="header__logo" src="./images/coffee-logo.png" alt="Coffee roasters logo">
+            <nav class="header__nav">
+                <ul class="header__nav__links">
+                    <li class="header__nav__links__item"><a href="#about">Launching day</a></li>
+                    <li class="header__nav__links__item"><a href="#about">About</a></li>
+                    <li class="header__nav__links__item"><a href="#">Find us</a></li>
+                    <li class="header__nav__links__item"><a href="#">Shop</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="header__cart"><img src="./images/cart.png" alt="Cart"></a>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="hero__container">
+            <h1>Coffee Roasters</h1>
+            <h2 class="hero__container--color">new store in Barcelona</h2>
+            <h2><span class="countingDown"></span></h2>
+            <p>Come to enjoy the best coffee in town.</p>
+            <div class="hero__buttons">
+                <a href="#" class="hero__buttons__item hero__buttons__item--before">View Schedule</a>
+                <a href="#" class="hero__buttons__item hero__buttons__item--before">Book reservation</a>
+                <a href="#" class="hero__buttons__item hero__buttons__item--after">Check the nearest store</a>
+            </div>
+        </div>
+    </section>
+    <section class="about">
+        <video autoplay muted loop class="about__video">
+            <source src="./images/coffee video.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+        <div class="about__container">
+            <div class="about__us" data-aos="fade-right" data-aos-duration="3000">
+                <img src="./images/roaster.png" alt="Coffee Machine">
+                <h2>About us</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, fugit totam!</p>
+            </div>
+            <div class="about__product" data-aos="fade-left" data-aos-duration="3000">
+                <img src="./images/coffee close.jpg" alt="Coffee Grains">
+                <h2>Selected products</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, fugit totam!</p>
+            </div>
+        </div>
+    </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./scripts/main.js"></script>
+</body>
+</html>

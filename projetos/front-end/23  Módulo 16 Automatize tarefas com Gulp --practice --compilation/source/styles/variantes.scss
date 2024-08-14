@@ -1,0 +1,11 @@
+$cores: (
+    corPrincipal: rgb(233, 255, 64),
+    corSecundaria: rgb(6, 6, 220),
+    corTerciaria: rgb(255, 0, 157),
+);
+
+/*:export {
+    @each $key, $value in $cores {
+        $key: $value;
+    }
+};*/
