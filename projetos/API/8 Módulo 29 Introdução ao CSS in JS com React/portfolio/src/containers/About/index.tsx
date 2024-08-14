@@ -15,12 +15,12 @@ const About = () => {
       </Paragraph>
       <GithubSection>
         <img
-          src="https://github-readme-stats.vercel.app/api?username=zmngabriela&show_icons=true&theme=dracula&include_all_commits=true&count_private=true"
+          src="https://github-readme-stats.vercel.app/api?username=zmngabriela&show_icons=true&theme=THEME&include_all_commits=true&count_private=true"
           alt="GitHub Stats"
           className="github-images"
         />
         <img
-          src="https://github-readme-stats.vercel.app/api/top-langs/?username=zmngabriela&layout=compact&langs_count=7&theme=dracula"
+          src="https://github-readme-stats.vercel.app/api/top-langs/?username=zmngabriela&theme=THEME&layout=compact&langs_count=7&theme=dracula"
           alt="GitHub Most Used Languages"
           className="github-images"
         />
