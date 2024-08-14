@@ -43,9 +43,10 @@
 // }
 // automatizar e fazer todos os arquivos rodar o prettier:
 // npm prettier --write .\src\
+// se o prettier der erro, rodar npx eslint --fix src
 
-// 9. terminar configuracao do app react:
-// npm start
+// 9. TERMINAR CONFIGURACAO DO REACT APP:
+// rodar npm start - vai abrir a tela do vizualizador da pag react
 // baixar a extencao de react do chrome e usar componentes
 
 // 10. instalar styled components:
@@ -54,12 +55,22 @@
 // da pra fazer pelo quick fix mesmo que ele vai sugerir
 // npm i --save-dev @types/styled-components
 
-import EstiloGlobal from './styles';
+import About from './containers/About';
+import Projects from './containers/Projects';
+import Sidebar from './containers/Sidebar';
+import EstiloGlobal, { Container } from './styles';
 
 function App() {
   return (
     <>
       <EstiloGlobal />
+      <Container>
+        <Sidebar />
+        <main>
+          <About />
+          <Projects />
+        </main>
+      </Container>
     </>
   );
 }
