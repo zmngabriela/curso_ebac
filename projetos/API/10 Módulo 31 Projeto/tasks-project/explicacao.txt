@@ -1,0 +1,62 @@
+# INICIAR O REACT ROUTER dom
+  pra criar paginas dentro da SPA - single page application
+
+1. npm i --save react-router-dom
+2. npm start
+3. em app.tsx:
+import { createBrowserRouter, RouterProvider } from 'react-router-dom
+
+4. em app.tsx:
+const routes = createBrowserRouter([
+  {
+    path: '/',
+    element: <Home />
+  },
+  {
+    path: '/novo',
+    element: <Registration />
+  }
+])
+
+5. criar pasta de paginas > nome pagina > index.tsx
+6. no index.tsx - importa os componentes e coloca em um novo componente de pagina
+import SideBar from "../../containers/SideBar"
+import TaskList from "../../containers/TaskList"
+
+const Home = () => {
+  return (
+    <>
+      <SideBar />
+      <TaskList />
+  </>
+  )
+}
+
+export default Home
+
+7. faz um styles.ts pra segunda pagina, usando o Link ao inves de <a href>:
+import { Link } from 'react-router-dom'
+import styled from "styled-components";
+
+export const ButtonAddTask = styled(Link)`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  text-decoration: none;
+  height: 64px;
+  width: 64px;
+  background-color: #44BD32;
+  color: #fff;
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  border-radius: 50%;
+`
+
+8. faz um componente pra segunda pagina:
+import { ButtonAddTask } from "./styles"
+
+const AddButton = () => <ButtonAddTask to="/novo">+</ButtonAddTask>
+
+export default AddButton
